@@ -1,0 +1,77 @@
+body {
+    background-color: #faf9f6;
+    font-family: sans-serif;
+}
+
+#teaListTitle {
+    font-size: 20px;
+}
+
+#teaList span{
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #888;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+#keyword {
+    font-size: 16px;
+    padding: 10px;
+    height: 30px;
+    background-color: #f7f7f7;
+    border: 1px solid #888;
+}
+
+#searchButton {
+    font-size: 16px;
+    padding: 0 10px;
+    height: 30px;
+    vertical-align: top;
+}
+
+#constitution {
+    font-size: 16px;
+    height: 30px;
+}
+
+#constitutionButton {
+    font-size: 16px;
+    height: 30px;
+    padding: 0 10px;
+    vertical-align: top;
+}
+
+#teaSelect {
+    font-size: 16px;
+    height: 30px;
+}
+
+#teaButton {
+    font-size: 16px;
+    height: 30px;
+    padding: 0 10px;
+    vertical-align: top;
+}
+
+#constitutionTitle {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+#searchTitle {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#result {
+    margin-top: 15px;
+}
+
+#constitutionResult {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}

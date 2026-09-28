@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+
+<h1>🍵 東洋のお茶図鑑</h1>
+
+<p id="teaListTitle">こんなお茶を掲載しています</p>
+
+<div id="teaList"></div>
+
+<p id="searchTitle">気になるお茶を調べる</p>
+
+<input id="keyword" oninput="clearResult()">
+
+<button id="searchButton" onclick="searchTea()">検索</button>
+
+<div id="result"></div>
+
+<p id="constitutionTitle">体質でお茶を調べる</p>
+
+<select id="constitution">
+    <option>気虚</option>
+    <option>気滞</option>
+    <option>血虚</option>
+    <option>瘀血</option>
+    <option>水滞</option>
+</select>
+
+<button id="constitutionButton" onclick="searchConstitution()">選ぶ</button>
+
+<select id="teaSelect">
+    <!-- JavaScriptでお茶を入れるための空の選択窓 -->
+</select>
+
+<button id="teaButton" onclick="showTea()">表示</button>
+
+<div id="constitutionResult"></div>
+
+<script src="script.js"></script>
