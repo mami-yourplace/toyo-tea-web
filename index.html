@@ -19,7 +19,8 @@
 
 <p id="constitutionTitle">体質でお茶を調べる</p>
 
-<select id="constitution">
+<select id="constitution" onchange="searchConstitution()">
+    <option value="">体質を選ぶ</option>
     <option>気虚</option>
     <option>気滞</option>
     <option>血虚</option>
@@ -27,13 +28,12 @@
     <option>水滞</option>
 </select>
 
-<button id="constitutionButton" onclick="searchConstitution()">選ぶ</button>
-
-<select id="teaSelect">
+<select id="teaSelect" onchange="showTea()">
+    <option value="">お茶を選ぶ</option>
     <!-- JavaScriptでお茶を入れるための空の選択窓 -->
 </select>
 
-<button id="teaButton" onclick="showTea()">表示</button>
+<button id="resetButton" onclick="resetConstitution()">やり直す</button>
 
 <div id="constitutionResult"></div>
 
