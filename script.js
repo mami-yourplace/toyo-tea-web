@@ -541,3 +541,9 @@ function clearResult() {
     }
 
 }
+
+function resetConstitution() {
+    document.getElementById("constitution").value = "";
+    document.getElementById("teaSelect").innerHTML = '<option value="">お茶を選ぶ</option>';
+    document.getElementById("constitutionResult").innerHTML = "";
+}
