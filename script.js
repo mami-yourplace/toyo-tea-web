@@ -412,7 +412,38 @@ function showAllTea() {
 
         let teaLabel = document.createElement("span");
         teaLabel.textContent = teaName;
+        teaLabel.onclick = function() {  // 「teaLabelを押したら」
 
+            let tea = data[teaName]; // 「そのお茶の名前 teaName を使って、data から詳しいデータを取り出す」
+
+            if (selectedTeaLabel !== null) { // !== null は「何もない状態ではない」= 前に選んだお茶がある
+                selectedTeaLabel.style.backgroundColor = "";
+            }
+
+            teaLabel.style.backgroundColor = "#b8d8c0";
+            selectedTeaLabel = teaLabel;
+
+            document.getElementById("result").innerHTML = // 見つけた場所の中身を入れる（変える）
+            "🍵" + "<strong>" + teaName + "</strong>"
+            + "<br>"
+            + "原料 : " + tea["原料"]
+            + "<br>" + "五性 : " + tea["五性"]
+            + "<br>" + "五味 : " + tea["五味"]
+            + "<br>" + "帰経 : " + tea["帰経"]
+            + "<br><br>" 
+            + "<strong>東洋医学では</strong>"
+            + "<br>"
+            + tea["東洋医学では"]
+            + "<br><br>" 
+            + "<strong>お茶にまつわるおはなし</strong>" 
+            + "<br>"
+            + tea["お茶にまつわるおはなし"]
+            + "<br><br>" 
+            + "<strong>メモ</strong>" 
+            + "<br>"
+            + tea["メモ"];
+
+        };
         document.getElementById("teaList").appendChild(teaLabel);
     }
 
@@ -420,6 +451,7 @@ function showAllTea() {
     //　← showAllTea のfunction はここで終わり
 }
 
+let selectedTeaLabel = null;
 showAllTea(); // function の外
 
 function searchTea() {
